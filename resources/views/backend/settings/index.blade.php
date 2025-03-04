@@ -24,7 +24,7 @@
                     <div class="card card-primary card-outline">
                         <div class="card-body box-profile">
                             <div class="text-center">
-                                <img class="w-50 mx-auto" src="{{ asset('public/uploads/images/logo/' . $setting->logo) }}"
+                                <img class="w-50 mx-auto" src="{{ asset('uploads/images/logo/' . $setting->logo) }}"
                                     alt="">
                                 <hr>
                                 <span class="text-muted text-center text-dark h4">{{ $setting->bname }}</span> <br>

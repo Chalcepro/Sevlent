@@ -295,7 +295,7 @@ class PostController extends Controller
 
             $CKEditorFuncNum = $request->input('CKEditorFuncNum');
 
-            $url = asset('public/media/'.$fileName);
+            $url = asset('media/'.$fileName);
 
             $msg = 'Image uploaded successfully';
 

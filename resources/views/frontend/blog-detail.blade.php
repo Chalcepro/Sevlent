@@ -35,7 +35,7 @@
                     <div class="rv-blog-details-left">
                         @if ($post->image)
                             <div class="rv-blog-details__img">
-                                <img class="w-100" src="{{ asset('public/uploads/images/post/' . $post->image) }}"
+                                <img class="w-100" src="{{ asset('uploads/images/post/' . $post->image) }}"
                                     alt="blog banner">
                             </div>
                         @endif

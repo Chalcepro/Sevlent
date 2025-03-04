@@ -41,15 +41,15 @@
                             style="background-image: url({{ asset('uploads/images/post' . $post->image) }});">
                             <div class="project-img">
                                 @if ($post->image)
-                                    <img src="{{ asset('public/uploads/images/post/' . $post->image) }}"
+                                    <img src="{{ asset('uploads/images/post/' . $post->image) }}"
                                         class="img-fluid w-100 rounded" alt="Image">
                                 @else
-                                    <img src="{{ asset('public/uploads/images/no-image.jpg') }}"
+                                    <img src="{{ asset('uploads/images/no-image.jpg') }}"
                                         class="img-fluid w-100 rounded" alt="Image">
                                 @endif
 
                                 {{-- <div class="blog-plus-icon">
-                                    <a href="{{ asset('public/uploads/images/post/' . $post->image) }}"
+                                    <a href="{{ asset('uploads/images/post/' . $post->image) }}"
                                         data-lightbox="blog-1" class="btn btn-primary btn-md-square rounded-pill"><i
                                             class="fas fa-plus fa-1x"></i></a>
                                 </div> --}}

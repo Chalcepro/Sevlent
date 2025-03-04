@@ -81,11 +81,11 @@
                                             <td>
                                                 @if ($testimonial->image)
                                                     <img style="width:75px;"
-                                                        src="{{ asset('public/uploads/images/testimonial/' . $testimonial->image) }}"
+                                                        src="{{ asset('uploads/images/testimonial/' . $testimonial->image) }}"
                                                         alt="">
                                                 @else
                                                     <img style="width:75px;"
-                                                        src="{{ asset('public/uploads/images/no-image.jpg') }}"
+                                                        src="{{ asset('uploads/images/no-image.jpg') }}"
                                                         alt="">
                                                 @endif
                                             </td>

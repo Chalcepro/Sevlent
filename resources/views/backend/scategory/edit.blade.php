@@ -81,11 +81,11 @@
                                     <input name="image" accept="image/*" type="file" id="imgInp">
                                     @if ($scategory->image)
                                         <img style="width: 175px; margin-top:10px; border:1px solid black;" id="blah"
-                                            src="{{ asset('public/uploads/images/scategory/' . $scategory->image) }}"
+                                            src="{{ asset('uploads/images/scategory/' . $scategory->image) }}"
                                             alt="your image">
                                     @else
                                         <img style="width: 175px; margin-top:10px; border:1px solid black;" id="blah"
-                                            src="{{ asset('public/uploads/images/no-image.jpg') }}" alt="your image">
+                                            src="{{ asset('uploads/images/no-image.jpg') }}" alt="your image">
                                     @endif
                                 </div>
                             </div>

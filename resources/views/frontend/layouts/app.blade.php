@@ -22,14 +22,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
 
     <!-- Libraries Stylesheet -->
-    <link href="{{ asset('public/assets/lib/animate/animate.min.css') }}" rel="stylesheet" />
-    <link href="{{ asset('public/assets/lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet" />
+    <link href="{{ asset('assets/lib/animate/animate.min.css') }}" rel="stylesheet" />
+    <link href="{{ asset('assets/lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="{{ asset('public/assets/css/bootstrap.min.css') }}" rel="stylesheet" />
+    <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet" />
 
     <!-- Template Stylesheet -->
-    <link href="{{ asset('public/assets/css/style.css') }}" rel="stylesheet" />
+    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet" />
 
     @yield('css')
 </head>
@@ -105,12 +105,12 @@
             <h1 class="m-0">
                 @if ($setting->logo)
                     <img class="img-fluid me-3 d-none d-md-block" width="80"
-                        src="{{ asset('public/uploads/images/logo/' . $setting->logo) }}" alt="" />
+                        src="{{ asset('uploads/images/logo/' . $setting->logo) }}" alt="" />
                 @else
                 <h2>{{ $setting->bname }}</h2>
                 @endif
                 <img class="img-fluid me-3 d-block d-md-none" width="60"
-                    src="{{ asset('public/uploads/images/logo/' . $setting->logo) }}" alt="" />
+                    src="{{ asset('uploads/images/logo/' . $setting->logo) }}" alt="" />
             </h1>
         </a>
         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -233,16 +233,16 @@
     {{-- <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a> --}}
 
     <!-- JavaScript Libraries -->
-    <script src="{{ asset('public/assets/js/jquery-3.4.1.min.js') }}"></script>
-    <script src="{{ asset('public/assets/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('public/assets/lib/wow/wow.min.js') }}"></script>
-    <script src="{{ asset('public/assets/lib/easing/easing.min.js') }}"></script>
-    <script src="{{ asset('public/assets/lib/waypoints/waypoints.min.js') }}"></script>
-    <script src="{{ asset('public/assets/lib/owlcarousel/owl.carousel.min.js') }}"></script>
-    <script src="{{ asset('public/assets/lib/counterup/counterup.min.js') }}"></script>
+    <script src="{{ asset('assets/js/jquery-3.4.1.min.js') }}"></script>
+    <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('assets/lib/wow/wow.min.js') }}"></script>
+    <script src="{{ asset('assets/lib/easing/easing.min.js') }}"></script>
+    <script src="{{ asset('assets/lib/waypoints/waypoints.min.js') }}"></script>
+    <script src="{{ asset('assets/lib/owlcarousel/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('assets/lib/counterup/counterup.min.js') }}"></script>
 
     <!-- Template Javascript -->
-    <script src="{{ asset('public/assets/js/main.js') }}"></script>
+    <script src="{{ asset('assets/js/main.js') }}"></script>
 
 
     @if ($errors->any())

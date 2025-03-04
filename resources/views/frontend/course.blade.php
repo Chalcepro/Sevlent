@@ -38,7 +38,7 @@
                                         style="background-image: url({{ asset('uploads/images/services' . $service->image) }});">
                                         @if ($service->image)
                                             <div class="project-img">
-                                                <img src="{{ asset('public/uploads/images/service/' . $service->image) }}"
+                                                <img src="{{ asset('uploads/images/service/' . $service->image) }}"
                                                     class="img-fluid w-100 rounded" alt="Image">
                                             </div>
                                         @endif
@@ -69,7 +69,7 @@
                                         <div class="project-img">
                                             <a
                                                 href="{{ route('course.detail', ['category_slug' => $course->slug, 'service_slug' => optional($course->services->first())->slug]) }}">
-                                                <img src="{{ asset('public/uploads/images/scategory/' . $course->image) }}"
+                                                <img src="{{ asset('uploads/images/scategory/' . $course->image) }}"
                                                     class="img-fluid w-100 rounded" alt="Image">
                                             </a>
                                         </div>

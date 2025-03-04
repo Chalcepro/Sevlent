@@ -27,7 +27,7 @@
                                     <p class="mb-0">{{ $testimonial->location }}</p>
                                 </div>
                                 <div class="bg-white rounded-circle ms-3">
-                                    <img src="{{ asset('public/uploads/images/testimonial/' . $testimonial->image) }}"
+                                    <img src="{{ asset('uploads/images/testimonial/' . $testimonial->image) }}"
                                         class="rounded-circle p-2"
                                         style="width: 80px; height: 80px; border: 1px solid; border-color: var(--bs-primary);"
                                         alt="">

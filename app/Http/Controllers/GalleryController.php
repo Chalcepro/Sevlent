@@ -105,7 +105,7 @@ class GalleryController extends Controller
 
                 Gallery::create([
                     'name'=>$name,
-                    'src' => asset('public/uploads/images/our-gallery/'.$name)
+                    'src' => asset('uploads/images/our-gallery/'.$name)
                 ]);
             }
         }

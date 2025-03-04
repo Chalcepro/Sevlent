@@ -294,7 +294,7 @@
                                     <input name="image" accept="image/*" type="file" id="imgInp">
                                     @if ($service->image)
                                         <img style="width: 175px; margin-top:10px; border:1px solid black;" id="blah"
-                                            src="{{ asset('public/uploads/images/Service/' . $service->image) }}"
+                                            src="{{ asset('uploads/images/Service/' . $service->image) }}"
                                             alt="your image">
 
                                             <div class="mt-2">
@@ -304,7 +304,7 @@
                                             </div>
                                     @else
                                         <img style="width: 175px; margin-top:10px; border:1px solid black;" id="blah"
-                                            src="{{ asset('public/uploads/images/no-image.jpg') }}" alt="your image">
+                                            src="{{ asset('uploads/images/no-image.jpg') }}" alt="your image">
                                     @endif
                                 </div>
                             </div>
@@ -321,7 +321,7 @@
 
 @section('css')
 
-    <link rel="stylesheet" href="{{ asset('public/assets/css/prism.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/prism.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
     <style>
         /* summer note */
@@ -363,7 +363,7 @@
 
 @section('js')
     <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
-    <script src="{{ asset('public/assets/js/prism.js') }}"></script>
+    <script src="{{ asset('assets/js/prism.js') }}"></script>
 
     {{-- summer note --}}
     <script>

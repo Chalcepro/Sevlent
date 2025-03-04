@@ -13,7 +13,7 @@ class SummerNoteController extends Controller
             $image = $request->file('image');
 
             // Define the folder where you want to store the images
-            $folder = '/public/uploads/images/summernote/';
+            $folder = '/uploads/images/summernote/';
             // $folder = public_path('uploads/images/summernote/');
 
             // Generate a unique filename for the image

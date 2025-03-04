@@ -31,7 +31,7 @@
             </div>
             <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
                 <div class="faq-img RotateMoveRight rounded">
-                    <img src="{{ asset('public/assets/img/faq-img.jpg') }}" class="img-fluid rounded w-100"
+                    <img src="{{ asset('assets/img/faq-img.jpg') }}" class="img-fluid rounded w-100"
                         alt="Image">
                     {{-- <a class="faq-btn btn btn-primary rounded-pill text-white py-3 px-5" href="#">Read More
                         Q & A <i class="fas fa-arrow-right ms-2"></i></a> --}}

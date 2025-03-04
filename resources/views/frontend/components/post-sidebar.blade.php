@@ -27,10 +27,10 @@
     @foreach ($recently as $post)
         <div class="rv-recent-blog">
             @if ($post->image)
-                <img class="rv-recent-blog__img" src="{{ asset('public/uploads/images/post/' . $post->image) }}"
+                <img class="rv-recent-blog__img" src="{{ asset('uploads/images/post/' . $post->image) }}"
                     alt="blog image">
             @else
-                <img class="rv-recent-blog__img" src="{{ asset('public/uploads/images/no-image.jpg') }}"
+                <img class="rv-recent-blog__img" src="{{ asset('uploads/images/no-image.jpg') }}"
                     alt="blog image">
             @endif
             <div class="rv-recent-blog__txt">

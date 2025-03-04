@@ -58,7 +58,7 @@
 
 @section('css')
     {{-- multiple image uploader css --}}
-    <link rel="stylesheet" href="{{ asset('public/image-uploader-master/dist/image-uploader.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('image-uploader-master/dist/image-uploader.min.css') }}">
 @stop
 
 @section('js')
@@ -101,7 +101,7 @@
     </script>
 
     <!-- multiple image upload master -->
-    <script src="{{ asset('public/image-uploader-master/dist/image-uploader.min.js') }}"></script>
+    <script src="{{ asset('image-uploader-master/dist/image-uploader.min.js') }}"></script>
 
         {{-- Sucess and error notification alert --}}
         <script>

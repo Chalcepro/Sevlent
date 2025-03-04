@@ -119,11 +119,11 @@
                                     <input name="image" accept="image/*" type="file" id="imgInp">
                                     @if ($team->image)
                                         <img style="width: 175px; margin-top:10px; border:1px solid black;" id="blah"
-                                            src="{{ asset('public/uploads/images/team/' . $team->image) }}"
+                                            src="{{ asset('uploads/images/team/' . $team->image) }}"
                                             alt="your image">
                                     @else
                                         <img style="width: 175px; margin-top:10px; border:1px solid black;" id="blah"
-                                            src="{{ asset('public/uploads/images/no-image.jpg') }}" alt="your image">
+                                            src="{{ asset('uploads/images/no-image.jpg') }}" alt="your image">
                                     @endif
                                 </div>
                                 <div class="form-group pt-0 pb-0 text-right">

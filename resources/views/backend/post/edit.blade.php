@@ -299,11 +299,11 @@
                                     <input name="image" accept="image/*" type="file" id="imgInp">
                                     @if ($post->image)
                                         <img style="width: 175px; margin-top:10px; border:1px solid black;" id="blah"
-                                            src="{{ asset('public/uploads/images/post/' . $post->image) }}"
+                                            src="{{ asset('uploads/images/post/' . $post->image) }}"
                                             alt="your image">
                                     @else
                                         <img style="width: 175px; margin-top:10px; border:1px solid black;" id="blah"
-                                            src="{{ asset('public/uploads/images/no-image.jpg') }}" alt="your image">
+                                            src="{{ asset('uploads/images/no-image.jpg') }}" alt="your image">
                                     @endif
                                 </div>
                             </div>

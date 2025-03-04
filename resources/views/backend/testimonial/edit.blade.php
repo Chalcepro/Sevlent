@@ -96,7 +96,7 @@
                                     id="imgInp" />
                                 <span class="text-muted text-sm">Recommended image size is 720px by 560px.</span><br>
                                 <img style="width: 180px; margin-top:10px; border:1px solid black;" id="blah"
-                                    src="@if ($testimonial->image) {{ asset('public/uploads/images/testimonial/' . $testimonial->image) }} @else {{ asset('public/uploads/images/no-image.jpg') }} @endif"
+                                    src="@if ($testimonial->image) {{ asset('uploads/images/testimonial/' . $testimonial->image) }} @else {{ asset('uploads/images/no-image.jpg') }} @endif"
                                     alt="your image" />
                             </div>
                         </div>

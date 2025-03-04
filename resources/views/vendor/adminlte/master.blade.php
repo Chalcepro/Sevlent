@@ -49,7 +49,7 @@
 
 
     {{-- Sweet alert2 --}}
-    <link rel="stylesheet" href="{{ asset('public/assets/sweet-alert2.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/sweet-alert2.css') }}">
 
     {{-- Custom Stylesheets (post AdminLTE) --}}
     @yield('adminlte_css')
@@ -110,7 +110,7 @@
 
 
     {{-- Sweet alert2 --}}
-    <script src="{{ asset('public/assets/sweet-alert2.min.js') }}"></script>
+    <script src="{{ asset('assets/sweet-alert2.min.js') }}"></script>
 
     {{-- Custom Scripts --}}
     @yield('adminlte_js')

@@ -81,7 +81,7 @@
                 <div class="col-md-9 order-sm-2 order-1 pt-5 pe-sm-5">
 
                     <div class="mb-4">
-                        <img class="img-fluid rounded" src="{{ asset('public/uploads/images/service/' . $service->image) }}"
+                        <img class="img-fluid rounded" src="{{ asset('uploads/images/service/' . $service->image) }}"
                             alt="">
                     </div>
 
@@ -162,7 +162,7 @@
 @section('css')
 
     <!-- Prism CSS for syntax highlighting -->
-    <link rel="stylesheet" href="{{ asset('public/assets/css/prism.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/prism.css') }}">
 
     <style>
         .video-container {
@@ -196,7 +196,7 @@
         });
     </script>
 
-    <script src="{{ asset('public/assets/js/prism.js') }}"></script>
+    <script src="{{ asset('assets/js/prism.js') }}"></script>
 
     @if ($errors->any())
         <script>

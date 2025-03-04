@@ -6,7 +6,7 @@
 
     <!--====== Start Breadcrumb Section ======-->
     <section class="page-banner bg_cover p-r z-1 text-white"
-        style="background-image: url(public/assets/images/bg/breadcrumbs-bg.jpg);">
+        style="background-image: url(assets/images/bg/breadcrumbs-bg.jpg);">
         <div class="container">
             <h1 class="page-title">Benifits</h1>
             <div class="page-breadcrumb">

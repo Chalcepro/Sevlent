@@ -8,7 +8,7 @@
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="{{ asset('public/assets/img/slider1.webp') }}" alt="Image" />
+                    <img class="w-100" src="{{ asset('assets/img/slider1.webp') }}" alt="Image" />
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row">
@@ -29,7 +29,7 @@
                     </div>
                 </div>
                 {{-- <div class="carousel-item">
-                    <img class="w-100" src="{{ asset('public/assets/img/slider2.webp') }}" alt="Image" />
+                    <img class="w-100" src="{{ asset('assets/img/slider2.webp') }}" alt="Image" />
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row">
@@ -49,7 +49,7 @@
                 </div>
 
                 <div class="carousel-item">
-                    <img class="w-100" src="{{ asset('public/assets/img/slider3.webp') }}" alt="Image" />
+                    <img class="w-100" src="{{ asset('assets/img/slider3.webp') }}" alt="Image" />
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row">
@@ -69,7 +69,7 @@
                 </div>
 
                 <div class="carousel-item">
-                    <img class="w-100" src="{{ asset('public/assets/img/slider4.webp') }}" alt="Image" />
+                    <img class="w-100" src="{{ asset('assets/img/slider4.webp') }}" alt="Image" />
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row">
@@ -120,7 +120,7 @@
                             <div class="project-img">
                                 <a
                                     href="{{ route('course.detail', ['category_slug' => $course->slug, 'service_slug' => optional($course->services->first())->slug]) }}">
-                                    <img src="{{ asset('public/uploads/images/scategory/' . $course->image) }}"
+                                    <img src="{{ asset('uploads/images/scategory/' . $course->image) }}"
                                         class="img-fluid w-100 rounded" alt="Image">
                                 </a>
                             </div>
@@ -199,7 +199,7 @@
                             @foreach ($testimonials as $testimonial)
                                 <div class="testimonial-item text-center">
                                     <img class="img-fluid rounded mx-auto mb-4"
-                                        src="{{ asset('public/uploads/images/testimonial/' . $testimonial->image) }}"
+                                        src="{{ asset('uploads/images/testimonial/' . $testimonial->image) }}"
                                         alt="" />
                                     <p class="fs-5">
                                         {{ $testimonial->body }}

@@ -63,12 +63,12 @@
 @stop
 
 @section('css')
-    <link rel="stylesheet" href="/public/css/admin_custom.css">
-    <link href="{{ asset('public/ckeditor/plugins/codesnippet/lib/highlight/styles/default.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="/css/admin_custom.css">
+    <link href="{{ asset('ckeditor/plugins/codesnippet/lib/highlight/styles/default.css') }}" rel="stylesheet">
 @stop
 
 @section('js')
-    {{-- <script src="{{ asset('public/ckeditor/ckeditor.js') }}"></script> --}}
+    {{-- <script src="{{ asset('ckeditor/ckeditor.js') }}"></script> --}}
 
     <script src="https://cdn.ckeditor.com/4.22.1/standard-all/ckeditor.js"></script>
 
