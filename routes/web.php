@@ -1,19 +1,20 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\SettingController;
-use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\PostController;
-use App\Http\Controllers\CategoryController;
-use App\Http\Controllers\TagController;
-use App\Http\Controllers\FrontController;
-use App\Http\Controllers\TestimonialController;
-use App\Http\Controllers\ScategoryController;
-use App\Http\Controllers\ServiceController;
-use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\FaqController;
+use App\Http\Controllers\TagController;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\TeamController;
+use App\Http\Controllers\FrontController;
+use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\SettingController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ScategoryController;
 use App\Http\Controllers\SummerNoteController;
+use App\Http\Controllers\TestimonialController;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,7 +42,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
     // profile
     Route::get('profile', [ProfileController::class, 'profile'])->name('profile');
     //password update
-    Route::post('password-update', [ProfileController::class, 'password_update'])->name('password.update');
+    // Route::post('password-update', [ProfileController::class, 'password_update'])->name('password.update');
     Route::post('/update-profile', [ProfileController::class, 'profile_update'])->name('profile.update');
     //posts
     Route::resource('post', PostController::class);

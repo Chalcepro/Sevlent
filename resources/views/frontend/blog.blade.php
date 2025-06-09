@@ -14,12 +14,12 @@
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
-            <h1 class="display-4 animated slideInDown mb-4 text-white">Contact Us</h1>
+            <h1 class="display-4 animated slideInDown mb-4 text-white">Blog</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb mb-0">
                     <li class="breadcrumb-item"><a class="text-white" href="{{ route('home') }}">Home</a></li>
                     <li class="breadcrumb-item active" aria-current="page">
-                        Contact Us
+                        Blog
                     </li>
                 </ol>
             </nav>
@@ -31,7 +31,7 @@
     <div class="container-fluid blog py-5">
         <div class="container ">
             <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
-                <h4 class="text-primary">Our Blogs</h4>
+                <h4 class="text-dark">Our Blogs</h4>
                 <h1 class="display-4">Latest Articles & News from the Blogs</h1>
             </div>
             <div class="row g-4 justify-content-center">
@@ -59,7 +59,7 @@
                                     class="h4">{{ Str::limit($post->title, 50) }}</a>
                                 <p>{{ Str::limit($post->excerpt, 140) }}</p>
                             </div>
-                            <a class="btn btn-primary rounded-pill py-2 px-4"
+                            <a class="btn rounded-pill py-2 px-4 text-light" style="background-color: #a7a7a7;"
                                 href="{{ route('blog.detail', $post->slug) }}">Explore More</a>
                         </div>
                     </div>

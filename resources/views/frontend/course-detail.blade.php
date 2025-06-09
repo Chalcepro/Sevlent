@@ -62,8 +62,8 @@
                                             @endphp
                                             @if ($scategory && $srv->published == '1')
                                                 <li>
-                                                    <a class="text-dark {{ request()->url() == route('course.detail', ['category_slug' => $category_slug, 'service_slug' => $srv->slug]) ? 'bg-primary text-white px-3 rounded my-2' : '' }}"
-                                                        href="{{ route('course.detail', ['category_slug' => $category_slug, 'service_slug' => $srv->slug]) }}">
+                                                    <a class="text-dark {{ request()->url() == route('course.detail', ['category_slug' => $category_slug, 'service_slug' => $srv->slug]) ? 'text-white px-3 rounded my-2' : '' }}"
+                                                        style="background-color: #444444;" href="{{ route('course.detail', ['category_slug' => $category_slug, 'service_slug' => $srv->slug]) }}">
                                                         {{ $srv->title }}
                                                     </a>
                                                 </li>
@@ -119,7 +119,7 @@
                     <div class="d-flex justify-content-between my-5">
                         @if ($prevService)
                             <a href="{{ route('course.detail', ['category_slug' => $category_slug, 'service_slug' => $prevService->slug]) }}"
-                                class="btn btn-primary d-none d-sm-block">
+                                class="btn d-none d-sm-block" style="background-color: #444444;">
                                 ← Previous: {{ $prevService->title }}
                             </a>
 

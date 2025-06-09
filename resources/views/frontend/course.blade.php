@@ -16,7 +16,7 @@
     <div class="container-fluid blog pb-5 mt-5">
         <div class="container pb-5">
             <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
-                <h4 class="text-primary">{{ $setting->bname }}</h4>
+                <h4 class="text-dark">{{ $setting->bname }}</h4>
                 <h1 class="display-4">
                     @if ($search)
                         {{ $search }}
@@ -34,7 +34,7 @@
                         <div class="row g-4 mb-5">
                             @foreach ($services as $service)
                                 <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
-                                    <div class="blog-item bg-light rounded p-3"
+                                    <div class="blog-item rounded p-3"
                                         style="background-image: url({{ asset('uploads/images/services' . $service->image) }});">
                                         @if ($service->image)
                                             <div class="project-img">
@@ -47,7 +47,7 @@
                                                 class="h4">{{ $service->title }}</a>
                                             <p>{{ Str::limit($service->excerpt, 140) }}</p>
                                         </div>
-                                        <a class="btn btn-primary rounded-pill py-2 px-4"
+                                        <a class="btn rounded-pill py-2 px-4" style="background-color: #a7a7a7;"
                                             href="{{ route('course.detail', ['category_slug' => $service->scategories->first()->slug, 'service_slug' => $service->slug]) }}">Explore
                                             More</a>
                                     </div>

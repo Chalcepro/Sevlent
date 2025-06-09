@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
     <a href="index.html" class="navbar-brand p-0">
-        <h1 class="m-0"><i class="fa fa-user-tie me-2"></i>Gem Consultant</h1>
+        {{-- <h1 class="m-0"><i class="fa fa-user-tie me-2"></i>Gem Consultant</h1> --}}
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
         <span class="fa fa-bars"></span>
@@ -37,10 +37,5 @@
             <a href="{{ route('blog') }}" class="nav-item nav-link">Blogs</a>
             <a href="{{ route('contact') }}" class="nav-item nav-link">Contact</a>
         </div>
-        {{-- <butaton type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal">
-            <i class="fa fa-search"></i>
-        </butaton> --}}
-        <a href="tel:{{ str_replace(' ', '', $setting->phone) }}" class="btn btn-primary py-2 px-4 ms-3">🤙
-            {{ $setting->phone }}</a>
     </div>
 </nav>

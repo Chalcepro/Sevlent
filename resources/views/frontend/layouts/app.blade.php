@@ -52,72 +52,27 @@
         </div>
     </div>
 
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-dark text-white-50 py-2 px-0 d-none d-lg-block">
-        <div class="row gx-0 align-items-center">
-            <div class="col-lg-7 px-5 text-start">
-                <div class="h-100 d-inline-flex align-items-center me-4">
-                    <small class="fa fa-phone-alt me-2"></small>
-                    <small>{{ $setting->phone }}</small>
-                </div>
-                <div class="h-100 d-inline-flex align-items-center me-4">
-                    <small class="far fa-envelope-open me-2"></small>
-                    <small>{{ $setting->email }}</small>
-                </div>
-                <div class="h-100 d-inline-flex align-items-center me-4">
-                    <small class="far fa-clock me-2"></small>
-                    <small>Mon - Sat : 09 AM - 09 PM</small>
-                </div>
-            </div>
-            <div class="col-lg-5 px-5 text-end">
-                <div class="h-100 d-inline-flex align-items-center">
-                    @if ($setting->facebook)
-                        <a target="_blank" class="text-white-50 ms-4" href="{{ $setting->facebook }}"><i
-                                class="fab fa-facebook-f"></i></a>
-                    @endif
-                    @if ($setting->instagram)
-                        <a target="_blank" class="text-white-50 ms-4" href="{{ $setting->instagram }}"><i
-                                class="fab fa-instagram"></i></a>
-                    @endif
-                    @if ($setting->twitter)
-                        <a target="_blank" class="text-white-50 ms-4" href="{{ $setting->twitter }}"><i
-                                class="fab fa-twitter"></i></a>
-                    @endif
-                    @if ($setting->linkedin)
-                        <a target="_blank" class="text-white-50 ms-4" href="{{ $setting->linkedin }}"><i
-                                class="fab fa-linkedin-in"></i></a>
-                    @endif
-                    @if ($setting->youtube)
-                        <a target="_blank" class="text-white-50 ms-4" href="{{ $setting->youtube }}"><i
-                                class="fab fa-youtube"></i></a>
-                    @endif
-
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Topbar End -->
-
+    
     <!-- Navbar Start -->
     <nav style="z-index: 2000;" class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-2 px-lg-5">
         <a href="{{ route('home') }}" class="navbar-brand d-flex align-items-center py-0">
             <h1 class="m-0">
                 @if ($setting->logo)
-                    <img class="img-fluid me-3 d-none d-md-block" width="80"
-                        src="{{ asset('uploads/images/logo/' . $setting->logo) }}" alt="" />
+                <img class="img-fluid me-3 d-none d-md-block h-100"
+                src="{{ asset('uploads/images/logo/' . $setting->logo) }}" alt="" />
                 @else
                 <h2>{{ $setting->bname }}</h2>
                 @endif
-                <img class="img-fluid me-3 d-block d-md-none" width="60"
-                    src="{{ asset('uploads/images/logo/' . $setting->logo) }}" alt="" />
+                <img class="img-fluid me-3 d-block d-md-none h-100"
+                src="{{ asset('uploads/images/logo/' . $setting->logo) }}" alt="" />
             </h1>
         </a>
+
         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav mx-auto bg-light rounded pe-4 py-3 py-lg-0">
+            <div class="navbar-nav ms-auto rounded pe-4 py-4 py-lg-0">
                 <a href="{{ route('home') }}"
                     class="nav-item nav-link {{ Route::is('home') ? 'active' : '' }}">Home</a>
                 <a href="{{ route('about') }}"
@@ -140,15 +95,60 @@
                     class="nav-item nav-link {{ Route::is('contact') ? 'active' : '' }}">Contact Us</a>
             </div>
         </div>
-        <a href="" class="btn btn-primary btn-lg rounded-1 py-1 px-4 d-none d-lg-block">
-            {{ $setting->phone }}</a>
     </nav>
     <!-- Navbar End -->
+
+            <!-- Topbar Start -->
+            <div class="container-fluid bg-dark text-white-50 py-1 px-0 d-none d-lg-block">
+                <div class="row gx-0 align-items-center">
+                    <div class="col-lg-7 px-5 text-start">
+                        <div class="h-100 d-inline-flex align-items-center me-4">
+                            <small class="fa fa-phone-alt me-2"></small>
+                            <small>{{ $setting->phone }}</small>
+                        </div>
+                        <div class="h-100 d-inline-flex align-items-center me-4">
+                            <small class="far fa-envelope-open me-2"></small>
+                            <small>{{ $setting->email }}</small>
+                        </div>
+                        <div class="h-100 d-inline-flex align-items-center me-4">
+                            <small class="far fa-clock me-2"></small>
+                            <small>Mon - Sat : 09 AM - 09 PM</small>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 px-5 text-end">
+                        <div class="h-100 d-inline-flex align-items-center">
+                            @if ($setting->facebook)
+                                <a target="_blank" class="text-white-50 ms-4" href="{{ $setting->facebook }}"><i
+                                        class="fab fa-facebook-f"></i></a>
+                            @endif
+                            @if ($setting->instagram)
+                                <a target="_blank" class="text-white-50 ms-4" href="{{ $setting->instagram }}"><i
+                                        class="fab fa-instagram"></i></a>
+                            @endif
+                            @if ($setting->twitter)
+                                <a target="_blank" class="text-white-50 ms-4" href="{{ $setting->twitter }}"><i
+                                        class="fab fa-twitter"></i></a>
+                            @endif
+                            @if ($setting->linkedin)
+                                <a target="_blank" class="text-white-50 ms-4" href="{{ $setting->linkedin }}"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            @endif
+                            @if ($setting->youtube)
+                                <a target="_blank" class="text-white-50 ms-4" href="{{ $setting->youtube }}"><i
+                                        class="fab fa-youtube"></i></a>
+                            @endif
+        
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Topbar End -->
 
     @yield('content')
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container-fluid bg-dark border-b-2 border-dark footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-5 col-md-6">
