@@ -101,7 +101,7 @@
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active" style="background: black">
-                    <div style="height: 100vh; overflow: hidden; opacity: 0.2;>
+                    <div style="height: 100vh; overflow: hidden; opacity: 0.2;">
                         <img class="w-100" src="{{ asset('assets/img/mainwallpaper.jpg') }}" style="object-fit: fill" alt="Image" />
                     </div>
                     <div class="carousel-caption">
@@ -116,7 +116,7 @@
                                         Join thousands of learners and unlock your potential with S3's free coding courses.
                                         No hidden fees, just pure knowledge – begin your journey now!
                                     </p>
-                                    <a href="{{ route('course') }}" class="btn py-3 px-5" style="background-color: #4b4b4b; color: white;">View Courses</a>
+                                    <a href="{{ route('course') }}" class="btn py-3 px-5" style="background-color: #414141; color: white;">View Courses</a>
                                 </div>
 
                             </div>
@@ -303,11 +303,9 @@
                         brighter future together – one line of code at a time.
                     </p>
                     <div class="bg-white rounded p-3">
-                        <div class="d-flex align-items-center rounded p-3" style="background-color: #a7a7a7;">
+                        <div class="d-flex align-items-center rounded p-3" style="background-color: #414141;">
                             <h5 class="mb-0">
-                                <span class="d-none d-md-block">Call Now: </span><i class="fa fa-mobile"></i> <a
-                                    class="text-white" href="tel:{{ $setting->phone }}">
-                                    {{ $setting->phone }}</a>
+                                <span class="d-none d-md-block text-white">Call Now: </span><a class="text-white" href="tel:{{ $setting->phone }}">{{ $setting->phone }}</a>
                             </h5>
                         </div>
                     </div>

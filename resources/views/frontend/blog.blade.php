@@ -30,9 +30,9 @@
     <!-- Blog Start -->
     <div class="container-fluid blog py-5">
         <div class="container ">
-            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
-                <h4 class="text-dark">Our Blogs</h4>
-                <h1 class="display-4">Latest Articles & News from the Blogs</h1>
+            <div class="text-center mx-auto pb-5 wow fadeInUp w-100" data-wow-delay="0.1s" style="">
+                <h4 class="" style="color: black">Our Blogs</h4>
+                <h1 class="display-4" style="color: black">Latest Articles & News from the Blogs</h1>
             </div>
             <div class="row g-4 justify-content-center">
                 @forelse ($posts as $post)
@@ -59,7 +59,7 @@
                                     class="h4">{{ Str::limit($post->title, 50) }}</a>
                                 <p>{{ Str::limit($post->excerpt, 140) }}</p>
                             </div>
-                            <a class="btn rounded-pill py-2 px-4 text-light" style="background-color: #a7a7a7;"
+                            <a class="btn rounded-pill py-2 px-4 text-light" style="background-color: #414141;"
                                 href="{{ route('blog.detail', $post->slug) }}">Explore More</a>
                         </div>
                     </div>

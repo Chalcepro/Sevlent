@@ -62,7 +62,7 @@
                                             @endphp
                                             @if ($scategory && $srv->published == '1')
                                                 <li>
-                                                    <a class="text-dark {{ request()->url() == route('course.detail', ['category_slug' => $category_slug, 'service_slug' => $srv->slug]) ? 'text-white px-3 rounded my-2' : '' }}"
+                                                    <a class="text-white {{ request()->url() == route('course.detail', ['category_slug' => $category_slug, 'service_slug' => $srv->slug]) ? 'text-white px-3 rounded my-2' : '' }}"
                                                         style="background-color: #444444;" href="{{ route('course.detail', ['category_slug' => $category_slug, 'service_slug' => $srv->slug]) }}">
                                                         {{ $srv->title }}
                                                     </a>

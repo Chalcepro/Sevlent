@@ -42,7 +42,7 @@
             </div>
         </div>
         <div class="col-12">
-            <button class="btn btn-primary py-3 px-5" type="submit">
+            <button class="btn btn-primary w-100 py-3 px-5" style="background-color: #414141;" type="submit">
                 Send Message
             </button>
         </div>
