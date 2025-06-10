@@ -34,8 +34,8 @@ php artisan db:seed
 php artisan serve
 
 
-### Admin Login Link
-#### You can log in as an admin at the following URL: http://localhost:8000/login
+### Login Link
+#### You can login at the following URL: http://localhost:8000/login
 
 The admin login information can only be accessed by the admin himself.
 Contact +234 703 944 3182 for further enquiries.
