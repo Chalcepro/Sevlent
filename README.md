@@ -5,7 +5,7 @@ The w3school replica is built with Laravel by making use of premade assets and t
 Follow the steps below to get the project up and running:
 
 ### Step 1: clone the project
-git clone https://github.com/vfixtechnology/w3-school-clone.git
+git clone https://github.com/Chalcepro/Sevlent
 Or download the file as Zip and extract in your xampp htdocs folder
 
 ### Step 2: Go to the project directory and install dependencies
