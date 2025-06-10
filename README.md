@@ -1,4 +1,12 @@
-## Sevlent Software Solutions / S3
+## Sevlent Software Solutions / S3 
+
+### By Sokomba Chalcedony Ariel
+### Course: Computer Science 
+### Student of: Lincoln Colledge of Science Management and Teachnology
+### Student ID: LUC-NGA-002-ADM-100817
+### Semester: Semester 4
+
+### Introduction
 The w3school replica is built with Laravel by making use of premade assets and tools from other sites to develop the slick and responsive website.
 
 ## Installation Steps
