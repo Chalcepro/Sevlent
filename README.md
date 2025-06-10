@@ -1,16 +1,14 @@
-## W3Schools Clone - Laravel
-This project is a clone of the popular W3Schools website, built with Laravel by Vfix Technology. It has been made open-source under the MIT license. Feel free to contribute and improve!
-
-If you find this project helpful, please ⭐ star the repository on GitHub — your support encourages us to build more amazing projects!
+## Sevlent Software Solutions / S3
+The w3school replica is built with Laravel by making use of premade assets and tools from other sites to develop the slick and responsive website.
 
 ## Installation Steps
 Follow the steps below to get the project up and running:
 
 ### Step 1: clone the project
 git clone https://github.com/vfixtechnology/w3-school-clone.git
+Or download the file as Zip and extract in your xampp htdocs folder
 
 ### Step 2: Go to the project directory and install dependencies
-#### cd w3-school-clone
 composer install
 
 ### Step 3: Create .env file
@@ -23,14 +21,13 @@ Create a new database in your local or remote MySQL server and add the database 
 To make the contact form work correctly, add your SMTP details in the .env file.
 
 ### Step 6: Run Migrations
-Run the migration command to create the necessary tables in the database:
-
+Run the migration command to create the necessary tables in the database.
 php artisan migrate
 
-### Step 7: Generate Application Key
+### Step 7: Generate Application Key.
 php artisan key:generate
 
-### Step 8: Add Dummy User for Admin
+### Step 8: Add Dummy User for Admin.
 php artisan db:seed
 
 ### Step 9: Serve the Application
@@ -40,8 +37,8 @@ php artisan serve
 ### Admin Login Link
 #### You can log in as an admin at the following URL: http://localhost:8000/login
 
-User: admin@example.com
-Password: admin123
+The admin login information can only be accessed by the admin himself.
+Contact +234 703 944 3182 for further enquiries.
 
 
 
