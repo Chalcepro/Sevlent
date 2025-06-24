@@ -38,9 +38,8 @@ class RegisterController extends Controller
      */
     public function __construct()
     {
-        //$this->middleware('guest');
-        //disabled register page
-         abort(404);
+        $this->middleware('guest');
+        // Registration page is now enabled
     }
 
     /**

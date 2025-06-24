@@ -93,6 +93,15 @@
                     class="nav-item nav-link {{ Route::is('blog') ? 'active' : '' }}">Blogs</a>
                 <a href="{{ route('contact') }}"
                     class="nav-item nav-link {{ Route::is('contact') ? 'active' : '' }}">Contact Us</a>
+
+                @auth
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: inline;">
+                        @csrf
+                        <button type="submit" class="nav-item nav-link btn btn mt-2 ms-4" style="padding: 0; margin: 0; color: inherit; background: none; border: none; cursor: pointer;">Logout</button>
+                    </form>
+                @else
+                    <a href="{{ route('register') }}" class="nav-item nav-link">Register</a>
+                @endauth
             </div>
         </div>
     </nav>
@@ -218,8 +227,8 @@
                     </div>
                     <div class="col-md-6 text-center text-md-end">
 
-                        Developed with ❤️ By <a target="_blank" href="https://www.vfixtechnology.com">VFIX
-                            TECHNOLOGY</a>
+                        Developed with <a target="_blank" href="https://www.vfixtechnology.com">VFIX
+                            TECHNOLOGY and <a href="https://chalcepro.github.io">ThatNewGuy23</a></a>
 
                     </div>
                 </div>

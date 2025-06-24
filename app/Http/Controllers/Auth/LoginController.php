@@ -24,9 +24,17 @@ class LoginController extends Controller
     /**
      * Where to redirect users after login.
      *
-     * @var string
+     * @return string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
+    protected function redirectTo()
+    {
+        // Check if the user is admin (customize this logic as needed)
+        $user = auth()->user();
+        if ($user && $user->email === 'admin@example.com') { // Change to your admin email
+            return '/admin/dashboard';
+        }
+        return '/';
+    }
 
     /**
      * Create a new controller instance.
