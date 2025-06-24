@@ -1,4 +1,16 @@
-## Sevlent Software Solutions / S3
+# Sevlent Software Solutions (S3)
+
+## 💻 Website project (laravel)
+
+### 👨‍🎓 By: Sokomba Chalcedony Ariel  
+**Course:** Computer Science  
+**Institution:** Lincoln College of Science, Management and Technology  
+**Student ID:** LUC-NGA-002-ADM-100817  
+**Semester:** 4
+
+---
+
+### Introduction
 The w3school replica is built with Laravel by making use of premade assets and tools from other sites to develop the slick and responsive website.
 
 ## Installation Steps
